@@ -26,6 +26,7 @@
 .overlay { background: rgba(88, 88, 88, 0.5); height: 100%; position: absolute; width: 100%; background-image: url(assets/images/CHRISTMAS-BACKGROUNDlogo.png); background-repeat: no-repeat; background-size: cover;  }
 .initial-snow .snow img { width: 100px; }
 .timer { font-family: 'Asya_extrabold'; font-size: 24px; color: rgb(242, 175, 104); }
+.it_team { position: absolute; top: 65%; left: 50%; transform: translate(-50% , -50%); }
 /* .loader-icon-1 { font-size: 80px; color: rgb(200, 241, 255, 0.8); text-shadow: 1px 1px 1px rgba(71, 196, 255, 1), -1px -1px 1px white; animation: snow-loader 0.5s 9 linear alternate-reverse forwards, snow-loader-zoom 5s forwards; animation-delay: 0s, 4.5s; } */
 
 @keyframes snow-loader {
