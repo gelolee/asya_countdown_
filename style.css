@@ -17,22 +17,16 @@
     src: url(assets/fonts/MADE-TOMMY-ExtraBold_PERSONAL-USE.otf);
 }
 
-.countdown { color: rgb(242, 175, 104); font-family: 'Asya_extrabold'; font-size: 80px; font-weight: 700; display: inline; background-color: rgba(255, 255, 255, 0.4); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); padding-inline: 30px; border-radius: 15px; }
+.countdown { color: black; font-family: 'Asya_extrabold'; font-size: 80px; font-weight: 700; display: inline; background-color: rgba(255, 255, 255, 0.4); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); padding-inline: 30px; border-radius: 15px; }
 .body-countdown { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; z-index: 1; }
 .body-countdown h1 { font-family: 'Asya_extrabold'; font-size: 90px; color:rgb(242, 175, 104); letter-spacing: 4px; text-transform: uppercase;}
+.body-countdown h3 { font-family: 'Asya_extrabold'; color: rgb(242, 175, 104); letter-spacing: 4px; text-transform: uppercase; }
 .background-image img { width: 100%; height: auto; background-size: cover; background-repeat: no-repeat; }
 .background-image { z-index: -111111;}
 .overlay { background: rgba(88, 88, 88, 0.5); height: 100%; position: absolute; width: 100%; background-image: url(assets/images/CHRISTMAS-BACKGROUNDlogo.png); background-repeat: no-repeat; background-size: cover;  }
+.initial-snow .snow img { width: 100px; }
 .timer { font-family: 'Asya_extrabold'; font-size: 24px; color: rgb(242, 175, 104); }
-
-.loader-icon-1 {
-    font-size: 80px;
-    color: rgb(200, 241, 255, 0.8);
-    text-shadow: 1px 1px 1px rgba(71, 196, 255, 1), -1px -1px 1px white;
-    animation: snow-loader 0.5s 9 linear alternate-reverse forwards,
-        snow-loader-zoom 5s forwards;
-    animation-delay: 0s, 4.5s;
-}
+/* .loader-icon-1 { font-size: 80px; color: rgb(200, 241, 255, 0.8); text-shadow: 1px 1px 1px rgba(71, 196, 255, 1), -1px -1px 1px white; animation: snow-loader 0.5s 9 linear alternate-reverse forwards, snow-loader-zoom 5s forwards; animation-delay: 0s, 4.5s; } */
 
 @keyframes snow-loader {
     from {
@@ -119,17 +113,17 @@
 }
 
 .snow:nth-child(2n) {
-    filter: blur(1px);
+    /* filter: blur(1px); */
     font-size: 40px;
 }
 
 .snow:nth-child(6n) {
-    filter: blur(2px);
+    /* filter: blur(2px); */
     font-size: 30px;
 }
 
 .snow:nth-child(10n) {
-    filter: blur(5px);
+    /* filter: blur(5px); */
     font-size: 30px;
 }
 
@@ -581,4 +575,11 @@
     left: 100vw;
     animation: snowfall 14s linear infinite;
     animation-delay: -9s;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 2400px) {
+    .body-countdown h1 { font-size: 1000px; }
 }
